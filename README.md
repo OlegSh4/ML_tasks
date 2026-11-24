@@ -1,52 +1,29 @@
-# README 
+# Classical Machine Learning Exercises
 
-Этот репозиторий содержит коллекцию проектов по машинному обучению, каждый из которых демонстрирует различные техники и модели, применяемые к разным наборам данных. Ниже приведено описание проектов, включенных в этот репозиторий.
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
 
-## Содержание
+A collection of notebooks from my machine learning coursework, covering the fundamentals: EDA, linear and polynomial models, the bias–variance trade-off, classification metrics and neural networks.
 
-1. [Классификатор MLP](#классификатор-mlp)
-2. [Классификация лиц Olivetti](#классификация-лиц-olivetti)
-3. [Регрессия набора данных LEV](#регрессия-набора-данных-lev)
-4. [Анализ набора данных Titanic](#анализ-набора-данных-titanic)
-5. [Анализ Precision, Recall, F1 Score](#анализ-precision-recall-f1-score)
-6. [Регрессия и классификация с полиномиальными признаками](#регрессия-и-классификация-с-полиномиальными-признаками)
-7. [Анализ индекса качества воздуха (AQI)](#анализ-индекса-качества-воздуха-aqi)
+## Contents
 
-## Классификатор MLP
+| Notebook | Topic | Data |
+|---|---|---|
+| `EDA.ipynb` | Titanic survival: exploratory analysis, missing values, encoding and logistic regression | `titanic.csv` |
+| `Numeric.ipynb` | Air quality (AQI) analysis: distributions of numeric features and preprocessing | Beijing air quality (`PRSA_Data-2.csv`) |
+| `Полиномиальные модели.ipynb` (*Polynomial models*) | Polynomial features for regression and classification, effect of polynomial degree | King County housing, synthetic data |
+| `Недообучение и переобучение.ipynb` (*Underfitting & overfitting*) | Bias–variance trade-off, learning curves, precision / recall / F1 | Boston Housing, synthetic data |
+| `MLP.ipynb` | Perceptron and multi-layer perceptron: decision boundaries vs. number of layers and neurons; Olivetti faces classification; regression evaluated with R² and MSE | synthetic blobs, Olivetti faces |
 
-Этот проект включает обучение классификатора многослойного перцептрона (MLP) на синтетических данных блобов. Код исследует влияние изменения количества нейронов и слоев на точность модели. Визуализации границ решений для различных конфигураций также предоставлены.
+## Tech stack
 
-## Классификация лиц Olivetti
+Python · NumPy · pandas · scikit-learn · Matplotlib · Seaborn
 
-В этом проекте используется модель перцептрона для классификации набора данных лиц Olivetti. Набор данных разделен на обучающую и тестовую выборки, и оценивается точность классификации.
-
-## Регрессия набора данных LEV
-
-Этот проект применяет модель перцептрона к набору данных LEV для задач регрессии. Производительность оценивается с использованием коэффициента R² и среднеквадратичной ошибки (MSE).
-
-## Анализ набора данных Titanic
-
-Этот проект включает в себя исследовательский анализ данных (EDA) и логистическую регрессию на наборе данных Titanic. Анализ включает обработку пропущенных значений, кодирование категориальных переменных и оценку производительности модели с использованием точности и отчетов о классификации.
-
-## Анализ Precision, Recall, F1 Score
-
-Этот проект демонстрирует расчет precision, recall и F1 score для модели логистической регрессии, обученной на синтетическом наборе данных для классификации. Также строятся кривые обучения для визуализации производительности модели.
-
-## Регрессия и классификация с полиномиальными признаками
-
-Этот проект исследует использование полиномиальных признаков для задач регрессии и классификации. Включает полиномиальную регрессию на синтетическом наборе данных и классификацию на сгенерированном наборе данных для классификации. Анализируется влияние различных степеней полинома на производительность модели.
-
-## Анализ индекса качества воздуха (AQI)
-
-Этот проект включает анализ набора данных индекса качества воздуха (AQI). Включает визуализацию распределения числовых столбцов и этапы предобработки, такие как обработка пропущенных значений и кодирование категориальных переменных.
-
-## Начало работы
-
-Для запуска проектов убедитесь, что у вас установлены необходимые библиотеки. Вы можете установить требуемые библиотеки с помощью следующей команды:
+## How to run
 
 ```bash
 pip install numpy pandas scikit-learn matplotlib seaborn
 ```
 
-Каждый проект содержится в своем соответствующем скрипте. Вы можете запускать скрипты индивидуально для воспроизведения результатов и визуализаций.
-
+Each notebook is self-contained, and the datasets are included in the repository.
